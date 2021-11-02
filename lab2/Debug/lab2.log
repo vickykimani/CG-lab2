@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\opengl\lab2\lab2\main.cpp(11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  lab2.vcxproj -> C:\openGL\lab2\Debug\lab2.exe
