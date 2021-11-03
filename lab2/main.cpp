@@ -3,6 +3,7 @@
 #include<math.h>
 #include<stdlib.h>
 
+
 void circle(GLfloat rx, GLfloat ry, GLfloat cx, GLfloat cy) {
 
 	glBegin(GL_TRIANGLE_FAN);
@@ -19,10 +20,10 @@ void circle(GLfloat rx, GLfloat ry, GLfloat cx, GLfloat cy) {
 void display(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
-	glColor3f(1.0, 1.0, 1.0); //white circle color                              (original circle)
+	glColor4f(1.0f, 0.5f, 0.0f, 0.0f); //orange brown                              (original circle)
 	circle(7, 7, 1, 1);  //positioning of the overlapping circle
 
-	glColor3f(0.0, 0.0, 0.0);  //black circle color                             (overlapping circle)
+	glColor3f(0.0f, 0.0f, 0.0f);  //black color                          (overlapping circle)
 	circle(7, 7, 4, 4); //positioning of the overlapping circle
 	glFlush();
 }
